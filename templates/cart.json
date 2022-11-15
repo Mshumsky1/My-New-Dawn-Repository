@@ -1,1 +1,80 @@
-{"sections":{"cart-items":{"type":"main-cart-items","settings":{"padding_top":36,"padding_bottom":36}},"cart-footer":{"type":"main-cart-footer","blocks":{"subtotal":{"type":"subtotal","settings":{}},"buttons":{"type":"buttons","settings":{}},"c8bee8ca-be49-4019-9ca9-f0fa03e6334b":{"type":"shopify:\/\/apps\/amp\/blocks\/delivery-datetime\/96f4dffc-26ce-430c-9359-005a406614b8","disabled":true,"settings":{}}},"block_order":["subtotal","buttons","c8bee8ca-be49-4019-9ca9-f0fa03e6334b"],"settings":{}},"featured-collection":{"type":"featured-collection","settings":{"title":"Featured collection","heading_size":"h2","description":"","show_description":false,"description_style":"body","collection":"all","products_to_show":4,"columns_desktop":4,"full_width":false,"show_view_all":true,"view_all_style":"solid","enable_desktop_slider":false,"color_scheme":"background-1","image_ratio":"square","show_secondary_image":false,"show_vendor":false,"show_rating":false,"enable_quick_add":false,"columns_mobile":"2","swipe_on_mobile":false,"padding_top":36,"padding_bottom":36}}},"order":["cart-items","cart-footer","featured-collection"]}
+{
+  "sections": {
+    "cart-items": {
+      "type": "main-cart-items",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "cart-footer": {
+      "type": "main-cart-footer",
+      "blocks": {
+        "subtotal": {
+          "type": "subtotal",
+          "settings": {
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+          }
+        },
+        "c8bee8ca-be49-4019-9ca9-f0fa03e6334b": {
+          "type": "shopify:\/\/apps\/amp\/blocks\/delivery-datetime\/96f4dffc-26ce-430c-9359-005a406614b8",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "3598411f-6f2e-4843-83d0-435241d72d1f": {
+          "type": "shopify:\/\/apps\/cc-delivery-date-time\/blocks\/cart-dellivery-1988\/778b3c9d-6aee-4460-9828-0c408353c91b",
+          "settings": {
+            "e1": "カートページは、商品をカートに追加することで配送日時指定が表示されます",
+            "e2": "保存ボタンを押下するまで、配送日時指定は表示されません。",
+            "e3": "表示されない場合は、ブラウザの再読み込みボタンを押してみてください"
+          }
+        }
+      },
+      "block_order": [
+        "subtotal",
+        "buttons",
+        "c8bee8ca-be49-4019-9ca9-f0fa03e6334b",
+        "3598411f-6f2e-4843-83d0-435241d72d1f"
+      ],
+      "settings": {
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "cart-items",
+    "cart-footer",
+    "featured-collection"
+  ]
+}
