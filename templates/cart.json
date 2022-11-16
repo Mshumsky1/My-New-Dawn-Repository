@@ -28,6 +28,7 @@
         },
         "3598411f-6f2e-4843-83d0-435241d72d1f": {
           "type": "shopify:\/\/apps\/cc-delivery-date-time\/blocks\/cart-dellivery-1988\/778b3c9d-6aee-4460-9828-0c408353c91b",
+          "disabled": true,
           "settings": {
             "e1": "カートページは、商品をカートに追加することで配送日時指定が表示されます",
             "e2": "保存ボタンを押下するまで、配送日時指定は表示されません。",
