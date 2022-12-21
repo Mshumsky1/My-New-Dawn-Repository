@@ -43,7 +43,15 @@
   </div>
 </div>
 <h1>test</h1>
+     {% for article in blogs.our-brands.articles %}
+      
+              {% if article.tags contains '{{ CLI }}' %}
 
+                    <a href={{ article.url}} >{{ article.title }}</a>
+
+            {% endif %}
+
+      {% endfor %}
 {% schema %}
 {
   "name": "t:sections.main-collection-banner.name",
