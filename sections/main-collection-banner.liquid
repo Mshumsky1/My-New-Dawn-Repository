@@ -43,10 +43,9 @@
   </div>
 </div>
 <h1>test</h1>
-<h1>{{ product.title }}</h1>
-    [% assign article = articles['shopify-cli-integration-with-github'] %}
-{{ article.title | link_to: article.url }}
-
+{% for collection in product.collections %}
+    {{ product.title }}
+  {% endfor %}
 {% schema %}
 {
   "name": "t:sections.main-collection-banner.name",
