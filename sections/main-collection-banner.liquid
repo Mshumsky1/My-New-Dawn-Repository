@@ -43,9 +43,8 @@
   </div>
 </div>
 <h1>test</h1>
-    {% for articles in blogs.shopify-cli-integration-with-github.articles %}
-  {{ article.title }}
-{% endfor %}
+    % assign article = articles['shopify-cli-integration-with-github'] %}
+{{ article.title | link_to: article.url }}
 
 {% schema %}
 {
