@@ -63,7 +63,7 @@
 %} 
 
 {% for article in collections %}
-{% if product.tags contains '日本酒' %}
+{% if collection.tags contains '日本酒' %}
 
           {{ article.title | link_to: article.url }}}}
 
