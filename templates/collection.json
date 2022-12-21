@@ -28,6 +28,7 @@
     },
     "fd0aea6c-4237-487b-8433-2f971cd6f6a8": {
       "type": "featured-blog",
+      "disabled": true,
       "settings": {
         "heading": "Blog posts",
         "heading_size": "h1",
