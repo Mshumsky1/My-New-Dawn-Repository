@@ -62,8 +62,8 @@
   assign articles = articles | uniq | sort: "published_at" | reverse
 %} 
 
-{% for article in articles %}
-{% if article.tags contains '日本酒' %}
+{% for article in collections %}
+{% if collection.tags contains '日本酒' %}
 
                     <a href="{{ article.url }}">{{ article.title }}</a>
 
