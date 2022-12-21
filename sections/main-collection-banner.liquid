@@ -65,7 +65,7 @@
 {% for article in collections %}
 {% if article.tags contains '日本酒' %}
 
-          {{ article.title }}
+          {{ article.title | article_img}}
 
             {% endif %}
 
