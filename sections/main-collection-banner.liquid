@@ -59,7 +59,12 @@
 {% if collection.tags contains '日本酒' %}
  {% assign article = articles['news/shopify-cli-integration-with-github'] %}
 {{ article.title | link_to: article.url }}
+{% endif %}
 
+  
+{% if collection.tags contains 'bundles' %}
+ {% assign article = articles['news/test-blog-post'] %}
+{{ article.title | link_to: article.url }}
 
 
 
