@@ -46,8 +46,20 @@
   </div>
 </div>
 <h1>test</h1>
+
+
+
 {% assign article = articles.news %}
 {{ article.title | link_to: article.url }}
+
+{% for blog in blogs %}
+  {% for article in blog.articles %}
+    {{ article.title }}
+  {% endfor %} 
+{% endfor %}
+
+
+
 {% schema %}
 {
   "name": "t:sections.main-collection-banner.name",
