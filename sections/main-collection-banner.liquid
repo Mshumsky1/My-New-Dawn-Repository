@@ -38,6 +38,9 @@
           width="{{ collection.image.width }}"
           height="{{ collection.image.height }}"
         >
+        {% for collection in product.collections %}
+    {{ tester }}
+  {% endfor %}
       </div>
     {%- endif -%}
   </div>
