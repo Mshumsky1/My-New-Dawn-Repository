@@ -42,9 +42,9 @@
     {%- endif -%}
   </div>
 </div>
-
+<h1>test</h1>
     {% for article in blogs.shopify-cli-integration-with-github.articles %}
-  {{- article.title | link_to: article.url }}
+  {{ article.title }}
 {% endfor %}
 
 {% schema %}
