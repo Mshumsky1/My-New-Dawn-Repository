@@ -63,6 +63,10 @@
 %} 
 
 {% for article in articles %}
+ {% if product.tags == "日本酒" %}
+ {% assign article = articles['news/shopify-cli-integration-with-github'] %}
+{{ article.title | link_to: article.url }}
+      {% endif %}
  <p></p> {{ article.title | link_to: article.url }} </p>
 {% endfor %}
 
