@@ -55,7 +55,7 @@
 
 
 
-{% for article in collections %}
+
 {% if collection.tags contains '日本酒' %}
   {{ articles['news/shopify-cli-integration-with-github'] }}
 {{ article.title | link_to: article.url }}
@@ -64,7 +64,7 @@
 
             {% endif %}
 
-      {% endfor %}
+  
 
 
 {% schema %}
