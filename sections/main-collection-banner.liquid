@@ -57,8 +57,9 @@
 
 
 {% if collection.tags contains '日本酒' %}
-  {{ articles['news/shopify-cli-integration-with-github'] }}
+ {% assign article = articles['news/shopify-cli-integration-with-github'] %}
 {{ article.title | link_to: article.url }}
+
 
 
 
