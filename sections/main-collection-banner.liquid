@@ -46,9 +46,8 @@
   </div>
 </div>
 <h1>test</h1>
-{% for articles in blogs.test-blog-post.articles %} 
-    {{ article.title }}
-  {% endfor %}
+{% assign article = articles['article.title | link_to: article.url'] %}
+{{ article.title | link_to: article.url }}
 {% schema %}
 {
   "name": "t:sections.main-collection-banner.name",
