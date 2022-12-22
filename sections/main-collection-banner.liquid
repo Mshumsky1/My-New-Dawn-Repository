@@ -72,7 +72,7 @@
             {% endif %} -->
 
 <h1>Miah</h1>
-{% assign blog = blogs['news']  %}
+{% assign blog = blogs['news/tagged/bundle']  %}
 {% for article in blog.articles %}
     {{ article.title }}
 {% endfor %}
