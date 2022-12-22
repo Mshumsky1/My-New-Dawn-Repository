@@ -4,10 +4,10 @@
 {% paginate search.results by 999 %}
   {%- for item in search.results -%}
           {%- if item.object_type == 'article' -%}
-              {%raw%}{
+              {
                 "article": {{ item.title }},
                 "image": {{ item.image }}
-              }{% endraw %}
+              }
           {%- endif -%}            
       {%- endfor -%}
 {% endpaginate %}]
