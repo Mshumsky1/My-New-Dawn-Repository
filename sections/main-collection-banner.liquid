@@ -65,7 +65,7 @@
 {% if collection.tags contains 'bundle' %}
   {% for article in articles %}
     {% if article.tags contains 'bundle' %}
-      {{ article.title | link_to: article.url }}
+      {{ article.title }}
     {% endif %}
   {% endfor %}
 {% endif %}
