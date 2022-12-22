@@ -5,8 +5,8 @@
   {%- for item in search.results -%}
           {%- if item.object_type == 'article' -%}
               {
-                "article": {{ item.title }},
-                "image": {{ item.image }}
+                "article": "{{ item.title }}",
+                "url": "{{ item.url }}"
               }
           {%- endif -%}            
       {%- endfor -%}
