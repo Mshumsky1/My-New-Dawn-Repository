@@ -55,7 +55,7 @@
 
 
 
-
+<!-- 
 {% if collection.tags contains '日本酒' %}
  {% assign article = articles['news/shopify-cli-integration-with-github'] %}
 {{ article.title | link_to: article.url }}
@@ -69,8 +69,13 @@
 
 
 
-            {% endif %}
+            {% endif %} -->
 
+
+{% assign blog = blogs['news/tagged/bundle']  %}
+{% for article in blog.articles %}
+    {{ article.title }}
+{% endfor %}
   
 
 
