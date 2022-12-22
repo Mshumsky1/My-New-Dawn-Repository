@@ -4,10 +4,10 @@
 {% paginate search.results by 999 %}
   {%- for item in search.results -%}
           {%- if item.object_type == 'article' -%}
-              {
+              {% unless forloop.first %},{% endunless %}{
                 "article": "{{ item.title }}",
                 "url": "{{ item.url }}"
-              },
+              }
           {%- endif -%}            
       {%- endfor -%}
 {% endpaginate %}]
