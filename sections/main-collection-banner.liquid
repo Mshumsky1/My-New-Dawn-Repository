@@ -75,10 +75,14 @@
             {% endif %} -->
 
 <h1>Miah</h1>
-{% assign blog = blogs['news']  %}
-{% for article in blog.articles %}
-    {{ article.title |link_to: article.url }}
-{% endfor %}
+<div id="articles-alt">
+  
+</div>
+<script>
+  fetch(`https://mizuki-test-store-8352.myshopify.com/search?view=alt&q=bundle`)
+  .then((response) => response.json())
+  .then((data) => console.log(data));
+</script>
   
 
 
