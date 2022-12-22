@@ -79,7 +79,7 @@
   
 </div>
 <script>
-  fetch(`https://mizuki-test-store-8352.myshopify.com/search?view=alt&q=bundle`)
+  fetch(`https://mizuki-test-store-8352.myshopify.com/search?view=alt&q=${tag}`)
   .then((response) => response.json())
   .then((data) => console.log(data));
 </script>
