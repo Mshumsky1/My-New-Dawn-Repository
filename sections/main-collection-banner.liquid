@@ -63,12 +63,12 @@
 
   
 {% if collection.tags contains 'bundle' %}
-  {% assign bundle_articles = articles | where_exp: "article", "article.tags contains 'bundle'" %}
-  {% for article in bundle_articles %}
-    {{ article.title | link_to: article.url }}
+  {% for article in articles %}
+    {% if article.tags contains 'bundle' %}
+      {{ article.title | link_to: article.url }}
+    {% endif %}
   {% endfor %}
 {% endif %}
-
 
   
 
