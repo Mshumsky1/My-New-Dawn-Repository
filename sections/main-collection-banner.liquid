@@ -55,7 +55,7 @@
 
 
 
-
+<!-- 
 {% if collection.tags contains '日本酒' %}
  {% assign article = articles['news/shopify-cli-integration-with-github'] %}
 {{ article.title | link_to: article.url }}
@@ -63,15 +63,19 @@
 
   
 {% if collection.tags contains 'bundle' %}
-  {% for article in articles %}
-    {% if article.tags contains 'bundle' %}
-      {{ article.title }}
-    {% endif %}
-  {% endfor %}
-{% endif %}
+ {% assign article = articles['news/test-blog-post']['news/shopify-cli-integration-with-github']  %}
+ 
+{{ article.title | link_to: article.url }}
 
-  
 
+
+            {% endif %} -->
+
+<h1>Miah</h1>
+{% assign blog = blogs['news']  %}
+{% for article in blog.articles %}
+    {{ article.title |link_to: article.url }}
+{% endfor %}
   
 
 
